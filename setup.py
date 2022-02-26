@@ -49,7 +49,7 @@ if __name__ == '__main__':
     setup(
         name='trident',
         version=version,
-        description='Trident is a framework for fast gpu operation develop, test and deploy!',
+        description='Trident is a framework for fast cpp/python/cuda development, test and deploy!',
         install_requires=[
             'numpy',
             'torch'
@@ -65,7 +65,7 @@ if __name__ == '__main__':
         ext_modules=[
             make_cuda_ext(
                 name='examplelib',
-                module='.',
+                module='trident.example',
                 sources=[
                     'core/example_torch.cpp',
                 ]
