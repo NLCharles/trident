@@ -68,6 +68,7 @@ if __name__ == '__main__':
                 module='trident.example',
                 sources=[
                     'core/example_torch.cpp',
+                    'core/example_numpy.cpp',
                 ]
             ),
         ],
